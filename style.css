@@ -1,0 +1,121 @@
+
+
+/*Header section*/
+
+html{
+    font-size: 62.5%;
+}
+
+body , html{
+    margin: 0;
+    padding: 0;    
+}
+
+.wrapper-main{
+    width: 1100px;
+    Margin: 0 auto;  
+}
+
+h1{
+    font-size: 4.5rem;
+    font-weight: 600;
+}
+
+h2{
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+h3{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+p{
+    font-size: 2rem;
+}
+
+a{
+    font-size: 2rem;
+}
+
+.header-main{ 
+    height:60px; 
+    background-color: White;  
+    justify-content: space-evenly;
+}
+
+.header-main-nav{
+    width: fit-content; 
+    height: 60px;
+    display: flex; 
+    clear: both; 
+    float: right;
+    padding-right: 20px;
+}
+
+.header-main-nav ul{
+    align-items: center;    
+    display: flex ;
+    gap:20px;  
+}
+
+.header-main-nav ul li{
+        transition: all ease-in-out 300ms;
+
+}
+
+.header-main-nav ul li:hover{
+    background-color: rgb(15, 183, 15);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+
+
+.hero-flex{
+    justify-content:center; 
+    display:flex;
+    justify-content: space-evenly;
+    min-width: auto;
+}
+
+.hero-section{
+    width:100%; 
+    padding: 30px 0;
+}
+
+.hero-text{     
+    flex-basis: 350px; 
+    height: fit-content;
+}
+.link{
+    color: white;
+    transition: all ease-in-out 300ms;
+}
+.link:hover{
+    background-color: rgb(11, 197, 11);
+}
+.hero-text a{
+    padding: 10px 40px;
+    background-color: green;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.hero-section p{
+    padding-bottom :30px;
+}
+
+.hero-section h1{
+     padding-bottom:20px;
+     font-weight: 700;
+}
+
+
+.hero-section img{
+    width: 200px; 
+    height: 200px;
+    min-width: 200px;
+    min-height:200px;
+}

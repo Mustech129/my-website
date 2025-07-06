@@ -1,0 +1,43 @@
+/* Reset nearly everything except default display behavior */
+*:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
+  all: unset;
+  display: revert;
+}
+
+/* Use border-box sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Remove bullets & numbering */
+ol, ul, menu {
+  list-style: none;
+}
+
+/* Make images responsive */
+img {
+  max-inline-size: 100%;
+  max-block-size: 100%;
+}
+
+/* Collapse tables */
+table {
+  border-collapse: collapse;
+}
+
+/* Restore native textarea whitespace on Safari */
+textarea {
+  white-space: revert;
+}
+
+/* Reapply cursor to links & buttons */
+a, button {
+  cursor: revert;
+}
+
+/* Keep default behavior on contenteditable, form inputs, etc. */
+:where([contenteditable]:not([contenteditable="false"])),
+:where([draggable="true"]),
+:where(dialog:modal) {
+  all: revert;
+}
